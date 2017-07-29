@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace TeduShop.Model.Models
+namespace Shop_Model.Models
 {
     public class ApplicationUser : IdentityUser
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TeduShop.Model.Models
+namespace Shop_Model.Models
 {
     [Table("VisitorStatistics")]
     public class VisitorStatistic

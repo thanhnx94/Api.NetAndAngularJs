@@ -41,7 +41,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="CommonService.cs" />
+    <Compile Include="ErrorService.cs" />
+    <Compile Include="PageService.cs" />
+    <Compile Include="PostCategoryService.cs" />
+    <Compile Include="PostService.cs" />
+    <Compile Include="ProductCategoryService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shop_Common\Shop_Common.csproj">
+      <Project>{f9b7d879-9758-4e61-a0b6-5edb0a2e3f65}</Project>
+      <Name>Shop_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shop_Data\Shop_Data.csproj">
+      <Project>{CB507E09-5D39-4351-AD6F-77C026891E89}</Project>
+      <Name>Shop_Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shop_Model\Shop_Model.csproj">
+      <Project>{8598289C-12F4-43C2-A5AF-50EC561F54D0}</Project>
+      <Name>Shop_Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

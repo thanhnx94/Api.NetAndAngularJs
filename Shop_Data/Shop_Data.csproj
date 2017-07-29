@@ -49,16 +49,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infastructure\DbFactory.cs" />
     <Compile Include="Infastructure\Disposable.cs" />
     <Compile Include="Infastructure\IDbFactory.cs" />
     <Compile Include="Infastructure\Irepository.cs" />
     <Compile Include="Infastructure\IunitOfWork.cs" />
+    <Compile Include="Infastructure\RepositoryBase.cs" />
+    <Compile Include="Infastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201707291026203_InitialDb.cs" />
+    <Compile Include="Migrations\201707291026203_InitialDb.Designer.cs">
+      <DependentUpon>201707291026203_InitialDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ErrorRepository.cs" />
+    <Compile Include="Repository\FooterRepository.cs" />
+    <Compile Include="Repository\MenuGroupRepository.cs" />
+    <Compile Include="Repository\MenuRepository.cs" />
+    <Compile Include="Repository\OrderDetailRepository.cs" />
+    <Compile Include="Repository\OrderRepository.cs" />
+    <Compile Include="Repository\PageRepository.cs" />
+    <Compile Include="Repository\PostCategoryRepository.cs" />
+    <Compile Include="Repository\PostRepository.cs" />
+    <Compile Include="Repository\PostTagRepository.cs" />
+    <Compile Include="Repository\ProductCategoryRepository.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
+    <Compile Include="Repository\ProductTagRepository.cs" />
+    <Compile Include="Repository\SlideRepository.cs" />
+    <Compile Include="Repository\SupportOnlineRepository.cs" />
+    <Compile Include="Repository\SystemConfigRepository.cs" />
+    <Compile Include="Repository\TagRepository.cs" />
+    <Compile Include="Repository\VisitorStatisticRepository.cs" />
     <Compile Include="ShopDbContext.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repository\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -72,6 +96,11 @@
       <Project>{8598289c-12f4-43c2-a5af-50ec561f54d0}</Project>
       <Name>Shop_Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707291026203_InitialDb.resx">
+      <DependentUpon>201707291026203_InitialDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

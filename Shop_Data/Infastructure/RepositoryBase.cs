@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TeduShop.Data.Infrastructure
+namespace Shop_Data.Infastructure
 {
     public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
         #region Properties
-        private TeduShopDbContext dataContext;
+        private ShopDbContext dataContext;
         private readonly IDbSet<T> dbSet;
 
         protected IDbFactory DbFactory
@@ -20,7 +18,7 @@ namespace TeduShop.Data.Infrastructure
             private set;
         }
 
-        protected TeduShopDbContext DbContext
+        protected ShopDbContext DbContext
         {
             get { return dataContext ?? (dataContext = DbFactory.Init()); }
         }

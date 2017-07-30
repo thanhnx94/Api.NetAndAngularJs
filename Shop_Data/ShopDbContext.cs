@@ -39,6 +39,8 @@ namespace Shop_Data
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
         public DbSet<Error> Errors { set; get; }
 
+        public DbSet<Test> Tests { get; set; }
+
         //ghi de phuong thu DBContext: ghi đè
         protected override void OnModelCreating(DbModelBuilder builder)
         {
